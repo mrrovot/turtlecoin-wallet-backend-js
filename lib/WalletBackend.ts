@@ -2502,7 +2502,15 @@ export class WalletBackend extends EventEmitter {
         return this.preparedTransactions.delete(transactionHash);
     }
 
-
+     /**
+     * Deletes all prepared transactions.
+     *
+     * Example:
+     * ```javascript
+     * const deletePreparedTransactions = await wallet.deletePreparedTransactions();
+     * ```
+     *
+     */
     public deletePreparedTransactions(): boolean {
         logger.log(
             'Function deletePreparedTransactions called',
@@ -2511,6 +2519,25 @@ export class WalletBackend extends EventEmitter {
         );
 
         return this.preparedTransactions.clear();
+    }
+
+     /**
+     * Lists all prepared transactions.
+     *
+     * Example:
+     * ```javascript
+     * const preparedTransactions = await wallet.listPreparedTransactions();
+     * ```
+     *
+     */
+    public listPreparedTransactions(): string[] {
+        logger.log(
+            'Function deletePreparedTransactions called',
+            LogLevel.DEBUG,
+            LogCategory.GENERAL,
+        );
+
+        return this.preparedTransactions.values();
     }
 
     /**
