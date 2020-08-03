@@ -2511,14 +2511,14 @@ export class WalletBackend extends EventEmitter {
      * ```
      *
      */
-    public deletePreparedTransactions(): boolean {
+    public deletePreparedTransactions(): void {
         logger.log(
             'Function deletePreparedTransactions called',
             LogLevel.DEBUG,
             LogCategory.GENERAL,
         );
 
-        return this.preparedTransactions.clear();
+        this.preparedTransactions.clear();
     }
 
      /**
@@ -2530,14 +2530,14 @@ export class WalletBackend extends EventEmitter {
      * ```
      *
      */
-    public listPreparedTransactions(): string[] {
+    public getPreparedTransactions(): string[] {
         logger.log(
             'Function deletePreparedTransactions called',
             LogLevel.DEBUG,
             LogCategory.GENERAL,
         );
 
-        return this.preparedTransactions.values();
+        this.preparedTransactions.values();
     }
 
     /**
