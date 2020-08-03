@@ -2522,7 +2522,7 @@ export class WalletBackend extends EventEmitter {
     }
 
      /**
-     * Lists all prepared transactions.
+     * Gets all prepared transactions.
      *
      * Example:
      * ```javascript
