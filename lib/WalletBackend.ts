@@ -2526,7 +2526,7 @@ export class WalletBackend extends EventEmitter {
      *
      * Example:
      * ```javascript
-     * const preparedTransactions = wallet.listPreparedTransactions();
+     * const preparedTransactions = wallet.getPreparedTransactions();
      * ```
      *
      */
