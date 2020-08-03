@@ -2532,7 +2532,7 @@ export class WalletBackend extends EventEmitter {
      */
     public getPreparedTransactions(): string[] {
         logger.log(
-            'Function deletePreparedTransactions called',
+            'Function getPreparedTransactions called',
             LogLevel.DEBUG,
             LogCategory.GENERAL,
         );
