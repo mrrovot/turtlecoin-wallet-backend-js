@@ -2502,6 +2502,17 @@ export class WalletBackend extends EventEmitter {
         return this.preparedTransactions.delete(transactionHash);
     }
 
+
+    public deletePreparedTransactions(): boolean {
+        logger.log(
+            'Function deletePreparedTransactions called',
+            LogLevel.DEBUG,
+            LogCategory.GENERAL,
+        );
+
+        return this.preparedTransactions.clear();
+    }
+
     /**
      * Get the unlocked and locked balance for the wallet container.
      *
