@@ -2507,7 +2507,7 @@ export class WalletBackend extends EventEmitter {
      *
      * Example:
      * ```javascript
-     * const deletePreparedTransactions = wallet.deletePreparedTransactions();
+     * wallet.deletePreparedTransactions();
      * ```
      *
      */
