@@ -2507,7 +2507,7 @@ export class WalletBackend extends EventEmitter {
      *
      * Example:
      * ```javascript
-     * const deletePreparedTransactions = await wallet.deletePreparedTransactions();
+     * const deletePreparedTransactions = wallet.deletePreparedTransactions();
      * ```
      *
      */
@@ -2526,7 +2526,7 @@ export class WalletBackend extends EventEmitter {
      *
      * Example:
      * ```javascript
-     * const preparedTransactions = await wallet.listPreparedTransactions();
+     * const preparedTransactions = wallet.listPreparedTransactions();
      * ```
      *
      */
