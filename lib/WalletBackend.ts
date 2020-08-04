@@ -2537,7 +2537,7 @@ export class WalletBackend extends EventEmitter {
             LogCategory.GENERAL,
         );
 
-        return this.preparedTransactions.values();
+        return Array.from(this.preparedTransactions.values());
     }
 
     /**
