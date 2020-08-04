@@ -2522,7 +2522,7 @@ export class WalletBackend extends EventEmitter {
     }
 
      /**
-     * Gets all prepared transactions.
+     * Gets all prepared transaction hashes.
      *
      * Example:
      * ```javascript
